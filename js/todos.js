@@ -271,7 +271,7 @@ $(function() {
       this.todos.create({
         content: this.input.val(),
         order:   this.todos.nextOrder(),
-        done:    false,
+        done:    new Date,
         user:    Parse.User.current(),
         ACL:     new Parse.ACL(Parse.User.current())
       });
