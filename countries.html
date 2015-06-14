@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Задания</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- Tables -->
+    <link rel="stylesheet" type="text/css" href="css/tables/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/tabletools/2.2.4/css/dataTables.tableTools.css">
+    <link rel="stylesheet" type="text/css" href="css/tables/dataTables.editor.css">
+
+    <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/tabletools/2.2.4/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/tables/policies.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/tables/claims.js"></script>
+
+</head>
+
+<body>
+
+    <!-- PRODUCT -->
+    <a name="countries"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <!-- Nav tabs -->
+                        <div class="row">
+                          <div class="span12 centered-pills">
+
+                            <ul class="nav nav-pills">
+                              <li class="active"><a href="#firstopendata" data-toggle="tab">1 часть</a></li>
+                              <li><a href="#secondopendata" data-toggle="tab">2 часть</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="firstopendata">
+                                <h2>Страны 1 часть</h2>
+                                <table class="compact hover stripe" cellpadding="0" cellspacing="0" border="0" class="display" id="policies" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Полис</th>
+                                            <th>Объект</th>
+                                            <th>Дата начала</th>
+                                            <th>Дата окончания</th>
+                                            <th>Страховая сумма</th>
+                                            <th>Страховая премия</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                            <div class="tab-pane fade" id="secondopendata">
+                                <h2>Страны 2 часть</h2>
+                                <table cellpadding="0" cellspacing="0" border="0" class="display" id="claims" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Убыток</th>
+                                            <th class="text-center">Дата заявления</th>
+                                            <th class="text-center">Сумма заявленная</th>
+                                            <th class="text-center">Дата выплаты</th>
+                                            <th class="text-center">Сумма выплаченная</th>
+                                            <th class="text-center">Страховой полис</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
